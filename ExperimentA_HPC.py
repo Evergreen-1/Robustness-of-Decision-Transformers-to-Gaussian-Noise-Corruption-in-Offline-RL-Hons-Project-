@@ -298,7 +298,7 @@ def run_checkpoint_evaluation(checkpoint_path: str, device: str):
     
     print(f"\nLOADING CHECKPOINT; Path: {checkpoint_path}")
 
-    ckpt = torch.load(checkpoint_path, map_location="cpu")
+    ckpt = torch.load(checkpoint_path, map_location="cpu", weights_only=False)
     algo = ckpt["algo"]
     state_mean = ckpt["state_mean"]
     state_std = ckpt["state_std"]
