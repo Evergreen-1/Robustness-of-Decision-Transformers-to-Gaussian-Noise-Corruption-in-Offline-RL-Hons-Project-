@@ -25,6 +25,7 @@ This project investigates the robustness and performance of CDT, DT, and CQL whe
     If "pip install minari[all]" fails then use "pip install minari" and add additional dependencies for Minari manually.
 
 [4] How to setup experiment:
+    
     Experiment flags:
     --algo          Used to specify which algorithm to run. (DT, CDT, CQL)
     --steps         Contains how many timesteps you want the algorithm to train for.
