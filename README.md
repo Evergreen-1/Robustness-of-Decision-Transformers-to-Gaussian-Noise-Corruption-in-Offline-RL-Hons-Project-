@@ -18,11 +18,11 @@ This project investigates the robustness and performance of CDT, DT, and CQL whe
 
     Dependency list:
         pip install numpy tqdm wandb pyrallis "gymnasium[mujoco]" minari[all]
-    For recording videos:
-        pip install moviepy
+        pip install wandb
 
 [3] Additional Note:
     If "pip install minari[all]" fails then use "pip install minari" and add additional dependencies for Minari manually.
+    You will have to setup your own Weights and Biases account and follow their instructions. You will have to edit the wandb.init() in run_single if you want to log data to your own projects.
 
 [4] How to setup experiment:
     
@@ -42,6 +42,3 @@ This project investigates the robustness and performance of CDT, DT, and CQL whe
         python ExperimentA_HPC.py --algo dt --device cuda --noise 0.0 --seed 0 --steps 100000 --rew --dataset walk
         python ExperimentA_HPC.py --full --algo dt --device cuda --steps 100000 --dataset walk  --obs
         python ExperimentA_HPC.py --checkpoint folder_location/cql_noise_0.75_seed_1_rew.pt --dataset walk --device cpu  
-
-
-
