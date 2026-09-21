@@ -20,6 +20,8 @@ This may vary depending on what terminal you are using, this example is for Wind
 
     Dependency list:
         pip install numpy tqdm wandb pyrallis "gymnasium[mujoco]" minari[all] "gymnasium[other]" wandb
+        pip install matplotlib        //For DatasetVerify.py
+        
 
 [3] Additional Note:
     If "pip install minari[all]" fails then use "pip install minari" and add additional dependencies for Minari manually.
